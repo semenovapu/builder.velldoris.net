@@ -1,0 +1,61 @@
+.quantity {
+    width: 100%;
+
+
+    &__stats {
+    display: flex;                // три колонки в ряд
+    align-items: center;          // вертикальное центрирование
+    background-color: #f5f5f5;
+    padding: 50px;
+    gap: 40px;                   // расстояние между строками
+    }
+
+
+    &__statsLeft{
+    flex: 1;                      // каждая боковая колонка = равная доля
+    display: flex;
+    flex-direction: column;       // элементы в столбик
+    justify-content: space-between; // разводим вверх и вниз
+    align-items: flex-end;
+    gap: 45px;
+    text-align: right;
+        .quantity__statNumber {
+        display: block;    // чтобы подпись шла с новой строки
+        font-family: "MontserratBold", sans-serif;
+        font-size: 20px;
+        color: #000000;
+        }
+    }
+
+
+    &__statsRight {
+    flex: 1;            
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 45px;
+    font-size: 18px;
+        .quantity__statNumber {
+            display: block;    // чтобы подпись шла с новой строки
+            font-family: "MontserratBold", sans-serif;
+            font-size: 20px;
+            color: #000000;
+         }
+    }
+
+
+    &__statsImage {
+    width: 360px;
+    flex-shrink: 0;
+    object-fit: contain;
+    border-radius: 10px;
+    }
+
+
+    &__statLabel {
+    display: block;
+    font-family: "MontserratRegular", sans-SemiBold;
+    font-size: 16px;
+    color: #000000;
+    }
+}

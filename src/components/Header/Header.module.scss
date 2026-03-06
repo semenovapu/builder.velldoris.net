@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+
+  &__logoImg {
+    max-width: 222px;
+    max-height: 80px;
+    margin: 21px 27px 0px 37px;
+  }
+
+  &__nav {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 0px 0px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 66px 30px 35px;
+
+    a {
+      color: #000;
+      font-family: MontserratSemiBold;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+
+  &__phone {
+    color: #ea7211;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+  }
+}

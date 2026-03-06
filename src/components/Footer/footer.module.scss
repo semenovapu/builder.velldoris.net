@@ -1,0 +1,17 @@
+.footer {
+  margin: 123px 0 0 0;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+    padding: 8px 0;
+    border-top: 1px solid #d0cdcc80;
+    border-bottom: 1px solid #d0cdcc80;
+
+    &_logo {
+      width: 175px;
+      height: auto;
+    }
+  }
+}

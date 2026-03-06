@@ -1,0 +1,106 @@
+.about {
+  width: 100%;
+
+  &__header {
+    background-color: #ffffff;
+    padding: 50px 50px 40px 50px;
+  }
+
+  &__mainTitle {
+    font-family: "MontserratBold", sans-serif;
+    font-size: 30px;
+    color: #ea7211;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  // две колонки
+  &__content {
+    display: flex;
+    gap: 60px; //расстояние между левой и правой колонками
+    padding: 50px;
+    background-color: #ffffff;
+  }
+
+  // Левая колонка
+  &__left {
+    // flex: 1 — занимает половину доступного места
+    flex: 1;
+  }
+
+  &__subtitle {
+    font-family: "MontserratBold", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+  }
+
+  &__list {
+    // list-style: none — убираем стандартные точки у списка
+    list-style: none;
+    // padding: 0 — убираем стандартный отступ списка слева
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-family: "MontserratRegular", sans-serif;
+      font-size: 16px;
+      color: #000000;
+      line-height: 1.6;
+      // Каждый пункт списка с отступом снизу
+      margin-bottom: 5px;
+    }
+  }
+
+  // --- Правая колонка
+  &__timeline {
+    // flex: 1 — тоже занимает половину
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    // gap — расстояние между элементами таймлайна
+    gap: 20px;
+    // padding-left — место для точек и линии
+    padding-left: 30px;
+  }
+
+  // --- Элемент таймлайна (точка + текст) ---
+  &__timelineItem {
+    // position: relative нужен, чтобы точка
+    // позиционировалась относительно этого блока
+    position: relative;
+    padding-left: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 0;
+      bottom: 8px;          // заканчивается на уровне центра точки
+      width: 2px;
+      background-color: #ea7211;
+    }
+
+    p {
+      font-family: "MontserratRegular", sans-serif;
+      font-size: 16px;
+      color: #000000;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+
+  // --- Оранжевая точка ---
+  &__timelineDot {
+    // absolute — точка выдёргивается из потока
+    // и ставится в конкретное место
+    position: absolute;
+    left: -30px;
+    bottom: 2px;           // на уровне последней строки
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ea7211;
+  }
+}
