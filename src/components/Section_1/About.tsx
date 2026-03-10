@@ -36,8 +36,8 @@ function About() {
           <div className={styles.about__timelineItem}>
             <div className={styles.about__timelineDot}></div>
             <p>
-              Наша история началась в 2001 году с
-              небольшого производства дверей по
+              Наша история началась в 2001 году с<br />
+              небольшого производства дверей по<br />
               индивидуальным заказам.
             </p>
           </div>
@@ -45,8 +45,8 @@ function About() {
           <div className={styles.about__timelineItem}>
             <div className={styles.about__timelineDot}></div>
             <p>
-              С 2013 года мы начали стремительно
-              наращивать обороты и увеличивать
+              С 2013 года мы начали стремительно<br />
+              наращивать обороты и увеличивать<br />
               масштабы деятельности.
             </p>
           </div>
@@ -54,8 +54,8 @@ function About() {
           <div className={styles.about__timelineItem}>
             <div className={styles.about__timelineDot}></div>
             <p>
-              Сейчас продукция VELLDORIS представлена
-              во всех регионах России и странах ближнего
+              Сейчас продукция VELLDORIS представлена<br />
+              во всех регионах России и странах ближнего<br />
               зарубежья.
             </p>
           </div>

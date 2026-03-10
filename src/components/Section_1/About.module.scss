@@ -7,7 +7,7 @@
   }
 
   &__mainTitle {
-    font-family: "MontserratBold", sans-serif;
+    font-family: "ProstoOneRegular", sans-serif;
     font-size: 30px;
     color: #ea7211;
     line-height: 1.3;
@@ -24,53 +24,50 @@
 
   // Левая колонка
   &__left {
-    // flex: 1 — занимает половину доступного места
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   &__subtitle {
-    font-family: "MontserratBold", sans-serif;
+    font-family: "MontserratSemiBold", sans-serif;
     font-size: 18px;
     color: #000000;
     text-transform: uppercase;
-    margin: 0 0 25px 0;
+    margin: 0 0 10px 0;
   }
 
   &__list {
-    // list-style: none — убираем стандартные точки у списка
     list-style: none;
-    // padding: 0 — убираем стандартный отступ списка слева
     padding: 0;
     margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 
     li {
       font-family: "MontserratRegular", sans-serif;
       font-size: 16px;
       color: #000000;
-      line-height: 1.6;
-      // Каждый пункт списка с отступом снизу
-      margin-bottom: 5px;
+      line-height: 2;
     }
   }
 
-  // --- Правая колонка
+  // Правая колонка
   &__timeline {
-    // flex: 1 — тоже занимает половину
     flex: 1;
-    display: flex;
     flex-direction: column;
-    // gap — расстояние между элементами таймлайна
-    gap: 20px;
-    // padding-left — место для точек и линии
+    justify-content: space-between;
     padding-left: 30px;
   }
 
-  // --- Элемент таймлайна (точка + текст) ---
+  // (точка + текст) ---
   &__timelineItem {
-    // position: relative нужен, чтобы точка
-    // позиционировалась относительно этого блока
     position: relative;
     padding-left: 0;
+    margin-bottom: 16px;
 
     &::before {
       content: "";

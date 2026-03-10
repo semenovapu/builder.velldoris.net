@@ -1,13 +1,12 @@
 .header {
   position: absolute;
   top: 0;
-  left: 180px;
+  left: 250px;
   display: flex;
-  width: 100%;
+  width: calc(100% - 250px);
   z-index: 2;
 
   &__logoImg {
-    max-width: 222px;
     max-height: 80px;
     margin: 21px 27px 0px 37px;
   }
@@ -32,7 +31,7 @@
   }
 
   &__phone {
-    color: #ea7211;
+    color: #ea7211 !important;
 
     &:hover {
       opacity: 0.8;
