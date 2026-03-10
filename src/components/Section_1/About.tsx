@@ -2,7 +2,7 @@ import styles from "./About.module.scss";
 
 function About() {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
 
       {/* оранжевый заголовок */}
       <div className={styles.about__header}>
