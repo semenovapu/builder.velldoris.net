@@ -12,7 +12,7 @@
 
 
     &__statsLeft{
-    flex: 1;                      // каждая боковая колонка = равная доля
+    flex: 1;            // каждая боковая колонка = равная доля
     display: flex;
     flex-direction: column;       // элементы в столбик
     justify-content: space-between; // разводим вверх и вниз
@@ -22,7 +22,7 @@
         .quantity__statNumber {
         display: block;    // чтобы подпись шла с новой строки
         font-family: "MontserratSemiBold", sans-serif;
-        font-size: 20px;
+        font-size: 35px;
         color: #000000;
         }
     }
@@ -38,24 +38,26 @@
         .quantity__statNumber {
             display: block;    // чтобы подпись шла с новой строки
             font-family: "MontserratSemiBold", sans-serif;
-            font-size: 20px;
+            font-size: 35px;
             color: #000000;
          }
     }
 
 
     &__statsImage {
-    width: 360px;
-    flex-shrink: 0;
-    object-fit: contain;
+    width: 526px;
+    height: 360px;
     border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 50px 50px 38px 50px; //расстояние вокруг картинки
     }
 
 
     &__statLabel {
     display: block;
     font-family: "MontserratRegular", sans-serif;
-    font-size: 16px;
+    font-size: 30px;
     color: #000000;
     }
 }

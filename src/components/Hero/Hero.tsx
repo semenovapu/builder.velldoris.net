@@ -6,10 +6,9 @@ function Hero() {
     <section className={styles.hero}>
 
       {/* фото с текстом */}
-      <div
-        className={styles.hero__image}
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+      <div className={styles.hero__image}
+        style={{ backgroundImage: `url(${heroBg})` }}>
+
         <div className={styles.hero__imageContent}>
           <h1 className={styles.hero__title}>
             ДВЕРИ

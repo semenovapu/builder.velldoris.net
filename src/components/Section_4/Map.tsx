@@ -8,10 +8,8 @@ function Map() {
 
       <div className={styles.map__top}>
         <h2 className={styles.map__title}>
-          Филиалы имеют собственную розницу,
-          <br />
-          склады с товарным запасом,
-          <br />
+          Филиалы имеют собственную розницу,<br />
+          склады с товарным запасом,<br />
           логистику и сервис для клиентов
         </h2>
 
@@ -27,10 +25,8 @@ function Map() {
         style={{ backgroundImage: `url(${girlAndDoors})` }}
       >
         <p className={styles.map__bannerText}>
-          Мы точно знаем,
-          <br />
-          как работать
-          <br />
+          Мы точно знаем,<br />
+          как работать<br />
           эффективно!
         </p>
       </div>

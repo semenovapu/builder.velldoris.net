@@ -9,8 +9,7 @@ function Production() {
 
       <div className={styles.production__header}>
         <h2 className={styles.production__mainTitle}>
-          Более 100 000 дверных блоков в месяц
-          <br />
+          Более 100 000 дверных блоков в месяц<br />
           производит фабрика VELLDORIS
         </h2>
       </div>
@@ -25,21 +24,21 @@ function Production() {
 
         <div className={styles.production__left}>
           <p className={styles.production__subTitle}>
-            С 2017 по 2022 год продажи межкомнатных
-            дверей выросли на 27,4% - это почти 10 млн
+            С 2017 по 2022 год продажи межкомнатных<br />
+            дверей выросли на 27,4% - это почти 10 млн<br />
             дверей в год.
           </p>
-          <p className={styles.production__subTitle}>
-            Компания VellDoris постоянно наращивает
-            производственные мощности и предлагает
+          <p className={styles.production__subTitle2}>
+            Компания VellDoris постоянно наращивает<br />
+            производственные мощности и предлагает<br />
             современные решения.
           </p>
         </div>
 
         <div className={styles.production__right}>
           <p className={styles.production__chartTitle}>
-            Ввод в действие жилых домов
-            в расчете на 1000 человек населения м.кв. общей площади
+            Ввод в действие жилых домов<br />
+            в расчете на 1000 человек населения м.кв. общей площади<br />
             в городской и сельской местности
           </p>
           <img className={styles.production__chartImage} src={schedule} alt="График" />

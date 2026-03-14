@@ -8,7 +8,7 @@
 
   &__logoImg {
     max-height: 80px;
-    margin: 21px 27px 0px 37px;
+    margin: 11px 0px 19px 0px;
   }
 
   &__nav {
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px 30px 35px;
+    padding: 0px 40px 0px 35px;
 
     @media (max-width: 1360px) {
       display: none;
@@ -31,12 +31,12 @@
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 
     li a {
       color: #000;
-      font-family: MontserratSemiBold;
-      font-size: 16px;
+      font-family: RobotoBold;
+      font-size: 20px;
       text-decoration: none;
       text-transform: uppercase;
       white-space: nowrap;

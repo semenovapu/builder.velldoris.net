@@ -8,18 +8,18 @@
 
 
   &__title {
-    font-family: "ProstoOneRegular", sans-serif;
-    font-size: 28px;
+    font-family: "MontserratSemiBold", sans-serif;
+    font-size: 50px;
     color: #ea7211;
-    line-height: 1.4;
-    margin: 0 0 40px 0;
-    padding: 20px 0 0 0;
+    line-height: 1.23;
+    margin: 0px 0px 40px 0px;
+    padding: 45px 0px 0px 0px;
   }
 
 
   &__imageWrapper {
     position: relative;
-    margin: 0 auto;
+    margin: auto;
   }
 
 
@@ -31,24 +31,24 @@
 
  
   &__banner {
-    width: 100%;
-    min-height: 400px;
+    width: 1450px;
+    height: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding: 50px 0 0 0;
+    padding: 0px 0px 0px 0px;
   }
 
 
   &__bannerText {
-    font-family: "MontserratSemiBold", sans-serif;
-    font-size: 28px;
+    font-family: "MontserratRegular", sans-serif;
+    font-size: 40px;
     color: #EA7211;
     line-height: 1.3;
     justify-content: center;
-    padding: 140px 90px;
+    margin: 0px 0px 150px 105px;
   }
 }

@@ -11,8 +11,7 @@ function CallRequest() {
 
       <div className={styles.callRequest__header}>
         <h2 className={styles.callRequest__title}>
-          VELLDORIS - надежный партнер,
-          <br />
+          VELLDORIS - надежный партнер,<br />
           с нами выгодно и надежно!
         </h2>
       </div>
@@ -22,10 +21,9 @@ function CallRequest() {
         style={{ backgroundImage: `url(${PartnerForm_bg})` }} >
         
 
-        <div className={styles.callRequest__formWrapper}>
+        <div className={styles.callRequest__formTitle}>
           <h3 className={styles.callRequest__formTitle}>
-            Мы готовы сделать
-            <br />
+            Мы готовы сделать<br />
             выгодное предложение
           </h3>
         </div>
@@ -33,7 +31,7 @@ function CallRequest() {
 
 
       <p className={styles.callRequest__disclaimer}>
-        Нажимая кнопку, Вы соглашаетесь с Политикой
+        Нажимая кнопку, Вы соглашаетесь с Политикой<br />
         конфиденциальности
       </p>
 

@@ -1,26 +1,33 @@
 .about {
   width: 100%;
+  background-color: #ffffff;
+
+  *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
   &__header {
     background-color: #ffffff;
-    padding: 50px 50px 40px 50px;
   }
 
   &__mainTitle {
-    font-family: "ProstoOneRegular", sans-serif;
-    font-size: 30px;
+    font-family: "MontserratSemiBold";
+    font-size: 50px;
     color: #ea7211;
     line-height: 1.3;
-    margin: 0;
+    padding: 96px 50px 0px 69px;
   }
 
   // две колонки
   &__content {
     display: flex;
     gap: 60px; //расстояние между левой и правой колонками
-    padding: 50px;
     background-color: #ffffff;
+    margin: 113px 0px 0px 97px; //расстояние двух колонок
   }
+
 
   // Левая колонка
   &__left {
@@ -28,14 +35,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    line-height: 28px;
   }
 
   &__subtitle {
-    font-family: "MontserratSemiBold", sans-serif;
-    font-size: 18px;
+    font-family: "MontserratSemiBold";
+    font-size: 22px;
     color: #000000;
     text-transform: uppercase;
-    margin: 0 0 10px 0;
+    margin: 0px 0px 14px 0px;
   }
 
   &__list {
@@ -45,53 +53,56 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 14px;
 
     li {
-      font-family: "MontserratRegular", sans-serif;
-      font-size: 16px;
+      font-family: "MontserratRegular";
+      font-size: 22px;
       color: #000000;
-      line-height: 2;
+      line-height: 28px;
     }
   }
 
   // Правая колонка
   &__timeline {
-    flex: 1;
+    //flex: 1;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 30px;
+    //justify-content: space-between;
+    //padding-left: 30px;
+    line-height: 28px;
+    margin: 0px 0px 95px 0px;
   }
 
   // (точка + текст) ---
   &__timelineItem {
     position: relative;
     padding-left: 0;
-    margin-bottom: 16px;
+    margin-bottom: 27px;
 
     &::before {
       content: "";
       position: absolute;
-      left: -25px;
-      top: 0;
-      bottom: 8px;          // заканчивается на уровне центра точки
+      left: 50px;
+      top: 7px;
+      bottom: 8px; // заканчивается на уровне центра точки
       width: 2px;
       background-color: #ea7211;
     }
 
     p {
       font-family: "MontserratRegular", sans-serif;
-      font-size: 16px;
+      font-size: 22px;
       color: #000000;
       line-height: 1.6;
-      margin: 0;
+      line-height: 28px;
+      margin: 0px 95px 0px 90px;
     }
   }
 
   // --- Оранжевая точка ---
   &__timelineDot {
     position: absolute;
-    left: -30px;
+    left: 45px;
     bottom: 2px;           // на уровне последней строки
     width: 12px;
     height: 12px;
