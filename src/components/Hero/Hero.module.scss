@@ -52,7 +52,7 @@
 
   &__bottom {
     display: flex;
-    font-family: MontserratMedium, sans-serif;
+    font-family: MontserratMedium;
     font-size: 28px;
     align-items: center; // Выравниваем всё по вертикали
     gap: 72px;
@@ -62,7 +62,7 @@
   &__button {
     background-color: #00B412;
     color: #ffffff;
-    font-family: "MontserratRegular", sans-serif;
+    font-family: "MontserratRegular";
     font-size: 32px;
     padding: 20.5px 116.5px;
     border: none;

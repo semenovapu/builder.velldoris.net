@@ -21,7 +21,7 @@
     text-align: right;
         .quantity__statNumber {
         display: block;    // чтобы подпись шла с новой строки
-        font-family: "MontserratSemiBold", sans-serif;
+        font-family: "MontserratSemiBold";
         font-size: 35px;
         color: #000000;
         }
@@ -37,7 +37,7 @@
     font-size: 18px;
         .quantity__statNumber {
             display: block;    // чтобы подпись шла с новой строки
-            font-family: "MontserratSemiBold", sans-serif;
+            font-family: "MontserratSemiBold";
             font-size: 35px;
             color: #000000;
          }
@@ -56,7 +56,7 @@
 
     &__statLabel {
     display: block;
-    font-family: "MontserratRegular", sans-serif;
+    font-family: "MontserratRegular";
     font-size: 30px;
     color: #000000;
     }
