@@ -1,0 +1,70 @@
+/*для прозрачности вокруг блоков имени и телефона*/
+.b24-form-wrapper {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* убираем внутренние отступы */
+.b24-form-padding-side {
+  padding: 0 !important;
+}
+
+/* имя и телефон */
+input.b24-form-control {
+  font-family: "MontserratRegular" !important;
+  font-size: 28px !important;
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  height: 73px !important;
+  width: 528px !important;
+  color: #000000 !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0px 10px 0px 40px !important;
+}
+
+
+/* шрифт и размер текста внутри блоков */
+input.b24-form-control::placeholder {
+  font-family: "MontserratRegular" !important;
+  font-size: 28px !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+/* расстояние между полями Имя и Телефон */
+.b24-form-wrapper .b24-form-field {
+  margin-bottom: 51px !important;
+}
+
+button.b24-form-btn {
+  font-family: "MontserratRegular" !important;
+  font-size: 28px !important;
+  background: #4CAF50 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  height: 73px !important;
+  width: 528px !important;
+  font-weight: 400 !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+}
+
+/* скрыть галочку и текст согласия */
+.b24-form-field-agreement {
+  display: none !important;
+}
+
+/* скрыть "сообщить о нарушении" */
+.b24-form-footer,
+.b24-form-sign {
+  display: none !important;
+}
+
+/* скрыть стандартные лейблы битрикса "Имя" и "Телефон" */
+.b24-form-control-label {
+  display: none !important;
+}

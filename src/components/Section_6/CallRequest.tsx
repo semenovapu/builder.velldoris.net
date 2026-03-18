@@ -1,6 +1,8 @@
 import styles from "./CallRequest.module.scss";
 import PartnerForm_bg from "../../assets/PartnerForm_bg.jpg";
 import velldorisLogoV from "../../assets/velldorisLogoV.png";
+import FormBitrix from "../FormBitrix/FormBitrix";
+
 
 
 function CallRequest() {
@@ -22,10 +24,11 @@ function CallRequest() {
         
 
         <div className={styles.callRequest__formTitle}>
-          <h3 className={styles.callRequest__formTitle}>
+          <p>
             Мы готовы сделать<br />
             выгодное предложение
-          </h3>
+          </p>
+          <FormBitrix />
         </div>
       </div>
 
