@@ -13,15 +13,17 @@
     font-family: "MontserratSemiBold";
     font-size: 50px;
     color: #ea7211;
-    line-height: 1.3;
-    padding: 96px 50px 0px 69px;
+    line-height: 1.21;
+    padding: 103px 0px 0px 67px;
+    letter-spacing: -0.1px;
+
   }
 
   // две колонки
   &__content {
     display: flex;
-    gap: 60px; //расстояние между левой и правой колонками
-    margin: 113px 0px 0px 97px; //расстояние двух колонок
+    gap: 40px; //расстояние между левой и правой колонками
+    margin: 113px 0px 0px 95px; //расстояние двух колонок
   }
 
 
@@ -31,7 +33,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    line-height: 28px;
+    line-height: 29px; //!!!!!!!!!!!!!!!!!
+
   }
 
   &__subtitle {
@@ -39,7 +42,7 @@
     font-size: 22px;
     color: #000000;
     text-transform: uppercase;
-    margin: 0px 0px 14px 0px;
+    margin: 0px 0px 12px 0px;
   }
 
   &__list {
@@ -49,7 +52,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 11.7px;
+    letter-spacing: -0.1px;
 
     li {
       font-family: "MontserratRegular";
@@ -61,46 +65,49 @@
 
   // Правая колонка
   &__timeline {
-    //flex: 1;
+    flex: 1;
     flex-direction: column;
-    //justify-content: space-between;
-    //padding-left: 30px;
-    line-height: 28px;
-    margin: 0px 0px 95px 0px;
+    line-height: 50px;
+    margin: 4px 10px 70px 0px;
+    letter-spacing: 0px;
   }
 
-  // (точка + текст) ---
+  // (точка + текст)
   &__timelineItem {
     position: relative;
     padding-left: 0;
-    margin-bottom: 27px;
+    margin-bottom: 38px;
 
     &::before {
       content: "";
       position: absolute;
-      left: 50px;
-      top: 7px;
-      bottom: 8px; // заканчивается на уровне центра точки
+      left: -10px;
+      top: 1px;
+      bottom: 3px; // заканчивается на уровне центра точки
       width: 2px;
       background-color: #ea7211;
+
     }
 
     p {
       font-family: "MontserratRegular";
       font-size: 22px;
       color: #000000;
-      line-height: 28px;
-      margin: 0px 95px 0px 90px;
+      line-height: 21px;
+      margin: 0px 0px 0px 62px;
+      //gap: 20px;
+      line-height: 26px;
+      margin-bottom: -16px;
     }
   }
 
   // --- Оранжевая точка ---
   &__timelineDot {
     position: absolute;
-    left: 45px;
-    bottom: 2px;           // на уровне последней строки
-    width: 12px;
-    height: 12px;
+    left: -15px;
+    bottom: -1px;           // на уровне последней строки
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     background-color: #ea7211;
   }

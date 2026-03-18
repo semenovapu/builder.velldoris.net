@@ -10,12 +10,12 @@ function Quantity() {
 
         <div className={styles.quantity__statsLeft}>
             <div className={styles.quantity__statItem}>
-                <span className={styles.quantity__statNumber}>50+</span>
+                <span className={styles.quantity__statNumber}>50+&nbsp;</span>
                 <span className={styles.quantity__statLabel}>розничных</span>
                 <span className={styles.quantity__statLabel}>салонов</span>
             </div>
             <div className={styles.quantity__statItem}>
-                <span className={styles.quantity__statNumber}>1000+</span>
+                <span className={styles.quantity__statNumber}>1000+&nbsp;</span>
                 <span className={styles.quantity__statLabel}>сотрудников</span>
                 <span className={styles.quantity__statLabel}>в команде</span>
             </div>

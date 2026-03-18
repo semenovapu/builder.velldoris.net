@@ -8,10 +8,10 @@ function Production() {
     <section className={styles.production}>
 
       <div className={styles.production__header}>
-        <h2 className={styles.production__mainTitle}>
+        <p className={styles.production__mainTitle}>
           Более 100 000 дверных блоков в месяц<br />
           производит фабрика VELLDORIS
-        </h2>
+        </p>
       </div>
 
       <div className={styles.production__content}>

@@ -55,12 +55,10 @@ function Header({
             handleClickMarketing={handleClickMarketing}
             handleClickWhatWillIget={handleClickWhatWillIget}
           />
-          <li>
-            <a className={styles.header__phone} href="tel:+7XXXXXXX">
-              +7-XXX-XX-XX-XX
-            </a>
-          </li>
         </ul>
+        <a className={styles.header__phone} href="tel:+7XXXXXXX">
+          +7-XXX-XX-XX-XX
+        </a>
       </nav>
 
      {windowWidth < 1360 && (
