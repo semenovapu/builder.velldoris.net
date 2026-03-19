@@ -35,12 +35,6 @@ function NavLinks({
       textNav: "contacts",
       click: handleClickMarketing,
     },
-    {
-      id: 3,
-      text: "Мы готовы сделать выгодное предложение",
-      textNav: "offer",
-      click: handleClickMarketing,
-    },
   ];
 
     const handleLinkClick = (clickFunction?: () => void) => {
