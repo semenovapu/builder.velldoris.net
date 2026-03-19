@@ -46,10 +46,12 @@ function Header({
 
 
   return (
-    <header className={styles.header}>
+    <header id="contacts" className={styles.header}>
      
         <nav className={styles.header__nav}>
-        <img className={styles.header__logoImg} src={logo} alt="VellDoris" />
+        <a href="/">
+          <img id="contacts" className={styles.header__logoImg} src={logo} alt="VellDoris" />
+        </a>
         <ul className={styles.header__nav_links}>
           <NavLinks
             handleClickMarketing={handleClickMarketing}

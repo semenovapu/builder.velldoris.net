@@ -34,7 +34,10 @@ function Hero() {
       {/*кнопка + текст */}
       <div className={styles.hero__bottom}>
         <button className={styles.hero__button}>
-          Получить предложение
+          <a href="#offer">
+            Получить предложение
+          </a>
+          
         </button>
 
         <p className={styles.hero__offer}>

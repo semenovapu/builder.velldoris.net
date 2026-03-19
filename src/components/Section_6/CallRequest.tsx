@@ -23,7 +23,7 @@ function CallRequest() {
         style={{ backgroundImage: `url(${PartnerForm_bg})` }} >
         
 
-        <div className={styles.callRequest__formTitle}>
+        <div id="offer" className={styles.callRequest__formTitle}>
           <p>
             Мы готовы сделать<br />
             выгодное предложение

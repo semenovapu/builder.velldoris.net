@@ -35,7 +35,25 @@ function NavLinks({
       textNav: "contacts",
       click: handleClickMarketing,
     },
+    {
+      id: 3,
+      text: "Мы готовы сделать выгодное предложение",
+      textNav: "offer",
+      click: handleClickMarketing,
+    },
   ];
+
+    const handleLinkClick = (clickFunction?: () => void) => {
+        return () => {
+          // Даем время на плавный скролл (1250ms из duration)
+          setTimeout(() => {
+            if (clickFunction) {
+              clickFunction();
+            }
+          }, 1300); // чуть больше duration
+        };
+      };
+
 
   return (
     <>
@@ -46,7 +64,7 @@ function NavLinks({
               to={info.textNav}
               duration={1250}
               smooth={true}
-              onClick={info.click}
+              onClick={handleLinkClick(info.click)} 
             >
               {info.text}
             </Link>
