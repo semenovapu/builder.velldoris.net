@@ -24,6 +24,10 @@ function Header({
   };
 
   useEffect(() => {
+      const toggleMenu = () => {
+      setIsOpen(!isOpen);
+      };
+
     if (!isOpen) return;
     const handleOutsideClick = (event: MouseEvent) => {
       if (
@@ -42,7 +46,7 @@ function Header({
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }, [isOpen]);
+  }, [isOpen]); 
 
 
   return (
