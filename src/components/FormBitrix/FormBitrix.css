@@ -68,3 +68,64 @@ button.b24-form-btn {
 .b24-form-control-label {
   display: none !important;
 }
+
+/* Планшет */
+@media (max-width: 1024px) {
+  input.b24-form-control {
+    width: 420px !important;
+    font-size: 22px !important;
+    height: 60px !important;
+  }
+
+  input.b24-form-control::placeholder {
+    font-size: 22px !important;
+  }
+
+  button.b24-form-btn {
+    width: 420px !important;
+    font-size: 22px !important;
+    height: 60px !important;
+  }
+}
+
+/* Мобильный */
+@media (max-width: 768px) {
+  input.b24-form-control {
+    width: calc(100vw - 60px) !important;
+    max-width: 400px !important;
+    font-size: 18px !important;
+    height: 54px !important;
+  }
+
+  input.b24-form-control::placeholder {
+    font-size: 18px !important;
+  }
+
+  button.b24-form-btn {
+    width: calc(100vw - 60px) !important;
+    max-width: 400px !important;
+    font-size: 18px !important;
+    height: 54px !important;
+  }
+
+  .b24-form-wrapper .b24-form-field {
+    margin-bottom: 28px !important;
+  }
+}
+
+/* Маленький мобильный */
+@media (max-width: 480px) {
+  input.b24-form-control {
+    font-size: 15px !important;
+    height: 48px !important;
+  }
+
+  input.b24-form-control::placeholder {
+    font-size: 15px !important;
+  }
+
+  button.b24-form-btn {
+    font-size: 15px !important;
+    height: 48px !important;
+  }
+}

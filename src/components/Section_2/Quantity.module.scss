@@ -70,4 +70,89 @@
     font-size: 30px;
     color: #000000;
     }
+
+  //  Планшет 
+  @media (max-width: 1024px) {
+    &__stats {
+      padding: 50px 20px;
+      gap: 20px;
+    }
+
+    &__statsLeft {
+      gap: 50px;
+      margin: 30px 20px 0 0;
+    }
+
+    &__statsRight {
+      gap: 50px;
+      margin: 30px 0 0 20px;
+    }
+
+    &__statsImage {
+      width: 340px;
+      height: 230px;
+    }
+
+    &__statNumber {
+      font-size: 26px !important;
+    }
+
+    &__statLabel {
+      font-size: 22px;
+    }
+  }
+
+  //  Мобильный 
+  @media (max-width: 768px) {
+    &__stats {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    &__statsLeft {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: left;
+      margin: 0;
+      gap: 20px;
+    }
+
+    &__statsRight {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
+      gap: 20px;
+    }
+
+    &__statsImage {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-top: 0;
+    }
+
+    &__statNumber {
+      font-size: 28px !important;
+    }
+
+    &__statLabel {
+      font-size: 20px;
+    }
+  }
+
+  // Маленький мобильный 
+  @media (max-width: 480px) {
+    &__statNumber {
+      font-size: 22px !important;
+    }
+
+    &__statLabel {
+      font-size: 16px;
+    }
+  }
 }

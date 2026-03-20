@@ -354,160 +354,71 @@ template {
 
 // swiper scss
 
-.swiper {
-  overflow: unset;
-  overflow-x: clip;
-}
-
 .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
-  //margin: 68px 0 0 0;
+  margin: 0 0 53.69px 0;
 
   @media (max-width: 860px) {
     margin: 0 0 23.69px 0;
   }
-
-  @media (max-width: 540px) {
-    margin: 0;
-  }
 }
 
 .swiper-pagination-bullet {
-  margin: 0 13.5px !important;
+  margin: 0 6.5px !important;
   background: transparent;
-  border: 1px solid #EA7211;
+  border: 1px solid #fa7902;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   opacity: 1;
 
-  @media (max-width: 768px) {
-    width: 10px;
-    height: 10px;
-    margin: 0 7.25px !important;
+  @media (max-width: 480px) {
+    width: 14px;
+    height: 14px;
   }
 }
 .swiper-pagination-bullet-active {
+  margin: 0 6.5px !important;
+  background-color: #fa7902;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin: 0 13.5px !important;
-  background-color: #EA7211;
 
-  @media (max-width: 768px) {
-    width: 10px;
-    height: 10px;
-    margin: 0 7.25px !important;
+  @media (max-width: 480px) {
+    width: 14px;
+    height: 14px;
   }
 }
 
 .swiper-button-prev {
-  //left: 70px;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #646464;
-  border-radius: 50%;
-  color: #000;
-  top: var(--swiper-navigation-top-offset, 102%);
+  color: #fa7902;
+
   /*media (max-width: 1024px) {
     top: var(--swiper-navigation-top-offset, 45%);
   }*/
-  &::after {
-    font-size: 16px;
-  }
-
-  @media (max-width: 768px) {
-    width: 29px;
-    height: 29px;
-    //top: var(--swiper-navigation-top-offset, 102%);
-    left: var(--swiper-navigation-sides-offset, 0px);
-  }
 }
 
 .swiper-button-next {
-  //right: 70px;
-  width: 49px;
-  height: 49px;
-  border: 1px solid #646464;
-  border-radius: 50%;
-  color: #000;
-  top: var(--swiper-navigation-top-offset, 102%);
+  color: #fa7902;
+
   /*@media (max-width: 1024px) {
     top: var(--swiper-navigation-top-offset, 45%);
   }*/
-  &::after {
-    font-size: 16px;
-  }
-
-  @media (max-width: 768px) {
-    width: 30px;
-    height: 30px;
-    top: var(--swiper-navigation-top-offset, 102%);
-    right: var(--swiper-navigation-sides-offset, 0px);
-  }
 }
 
 // убираю лишние отступы у формы битрикса (компонент FormBitrix)
 
-.mainTheme_formBitrix {
-  @media (max-width: 920px) {
-    background-color: rgba(29, 29, 27, 0.65);
-  }
+.b24-form {
+  margin: 0 0 0 181px;
+  max-width: 528px;
 
-  @media (max-width: 768px) {
-    //margin: 0 auto;
-  }
-}
-
-.section5_formBitrix {
-  @media (max-width: 980px) {
-    background-color: rgba(29, 29, 27, 0.65);
-  }
-}
-
-.mainTheme_formBitrix .b24-form {
-  margin: 0 auto;
-  max-width: 420px;
-
-  @media (max-width: 768px) {
-    max-width: 264px;
+  @media (max-width: 1024px) {
+    margin: 0;
   }
 
   @media (max-width: 640px) {
-    //max-width: 300px;
-  }
-}
-
-.section5_formBitrix .b24-form {
-  max-width: 418px;
-
-  @media (max-width: 980px) {
-    margin: 0 auto;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 264px;
-  }
-}
-
-.section12_formBitrix .b24-form {
-  max-width: 528px;
-
-  @media (max-width: 1280px) {
-    max-width: 502px;
-  }
-
-  @media (max-width: 1080px) {
-    max-width: 350px;
-  }
-
-  @media (max-width: 920px) {
-    margin: 0 auto;
-  }
-
-  @media (max-width: 680px) {
-    max-width: 262px;
+    max-width: 300px;
   }
 }
 
@@ -518,61 +429,4 @@ template {
 .b24-form-padding-side {
   padding-left: 0 !important;
   padding-right: 0 !important;
-}
-
-.section12_formBitrix .b24-form-btn {
-  background-color: #00b412;
-}
-
-// общие стили для title в рвзных компонентах
-
-.common-title {
-  white-space: pre-wrap;
-  color: #000;
-  text-transform: uppercase;
-  font-family: ProstoOneRegular;
-  font-size: 48px;
-  line-height: 129%;
-
-  &_one {
-    margin: 0 0 59px 0;
-
-    @media (max-width: 1280px) {
-      margin: 0 0 44px 0;
-    }
-    @media (max-width: 768px) {
-      margin: 0 0 24px 0;
-    }
-    @media (max-width: 480px) {
-      margin: 0 0 14px 0;
-      text-align: center;
-    }
-  }
-
-  &_two {
-    margin: 0 0 59px 70px;
-
-    @media (max-width: 1280px) {
-      margin: 0 0 44px 70px;
-    }
-    @media (max-width: 768px) {
-      margin: 0 0 24px 70px;
-    }
-    @media (max-width: 480px) {
-      margin: 0 0 14px 0;
-      text-align: center;
-    }
-  }
-
-  @media (max-width: 1280px) {
-    line-height: 100%;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 18px;
-  }
 }

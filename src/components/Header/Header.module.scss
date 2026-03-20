@@ -14,6 +14,16 @@
     width: 246px;
     margin: 11px 0px 15px 0px;
     display: block;
+
+    @media (max-width: 768px) {
+      width: 180px;
+      height: 58px;
+    }
+
+    @media (max-width: 480px) {
+      width: 140px;
+      height: 45px;
+    }
   }
 
   &__nav {
@@ -118,11 +128,14 @@
   }
 
   @media (max-width: 1360px) {
+    left: 16px;
+    width: calc(100% - 32px);
+
     .burger {
       display: block;
       position: fixed;
       right: 0;
-      margin: 30px 30px 0 0;
+      margin: 30px 30px 0px 0px;
       z-index: 4;
       width: 40px;
       height: 20px;
