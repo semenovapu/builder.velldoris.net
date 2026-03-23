@@ -1,3 +1,7 @@
+.b24-form {
+  margin: 0 !important;
+}
+
 /*для прозрачности вокруг блоков имени и телефона*/
 .b24-form-wrapper {
   background: transparent !important;
@@ -51,6 +55,7 @@ button.b24-form-btn {
   font-weight: 400 !important;
   cursor: pointer !important;
   margin: 0 !important;
+  
 }
 
 /* скрыть галочку и текст согласия */
