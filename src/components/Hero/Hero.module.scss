@@ -101,6 +101,36 @@
     }
 
     &__title {
+      font-size: 50px;
+      margin-bottom: 80px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__bottom {
+      margin: 50px 0 50px 50px;
+      gap: 40px;
+    }
+
+    &__button {
+      font-size: 22px;
+      padding: 15px 60px;
+    }
+
+    &__offer {
+      font-size: 20px;
+    }
+  }
+
+//  Маленький планшет
+  @media (max-width: 1300px) {
+    &__imageContent {
+      padding: 130px 40px 80px 50px;
+    }
+
+    &__title {
       font-size: 36px;
       margin-bottom: 80px;
     }

@@ -69,13 +69,38 @@
 
     &__formTitle {
       font-size: 36px;
-      margin: 50px 0 0 80px;
+      margin: 90px 0 0 80px;
     }
 
     &__disclaimer {
       margin: 5px 0 40px 80px;
     }
   }
+
+ // Маленький планшет 
+  @media (max-width: 1300px) {
+    &__header {
+      margin: 80px 0 80px 0;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__formSection {
+      min-height: 550px;
+    }
+
+    &__formTitle {
+      font-size: 36px;
+      margin: 90px 0 0 80px;
+    }
+
+    &__disclaimer {
+      margin: 5px 0 40px 80px;
+    }
+  }
+
 
   // Мобильный
   @media (max-width: 768px) {
