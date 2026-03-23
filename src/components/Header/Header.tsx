@@ -91,8 +91,8 @@ function Header({
             handleClickWhatWillIget={handleClickWhatWillIget}
           />
           <li>
-            <a className={styles.header__phone} href="tel:+XXXXXXX">
-              +7-XXX-XX-XX-XX
+            <a className={styles.header__phone} href="tel:+7(812)606-75-51">
+              +7(812)606-75-51
             </a>
           </li>
         </ul>
