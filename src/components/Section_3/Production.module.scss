@@ -171,12 +171,20 @@
 
   //  Маленький мобильный 
   @media (max-width: 480px) {
+    &__header {
+    margin: 40px 0 50px 0;
+    }
+
     &__mainTitle {
       font-size: 20px;
+      margin: 0 10px 0 10px;
+      padding: 0;
     }
 
     &__contTitle {
       font-size: 16px;
+      margin: 0 10px 0 10px;
+      padding: 0;
     }
 
     &__subTitle,
